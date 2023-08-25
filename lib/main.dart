@@ -1,4 +1,4 @@
-import 'package:awesome_app/homepage.dart';
+import 'package:awesome_app/pages/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
