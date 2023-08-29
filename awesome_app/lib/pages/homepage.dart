@@ -37,7 +37,16 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Awesome App")),
+      appBar: AppBar(
+        title: Text("Awesome App"),
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: Icon(Icons.exit_to_app))
+        ],
+      ),
       body: data != null
           ? ListView.builder(
               itemCount: data.length,
